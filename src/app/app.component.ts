@@ -14,6 +14,9 @@ export class AppComponent {
   buscar(nombreABuscar:any){
     console.log(nombreABuscar.value)
 
-
+    this.servicio_de_tiempo.obtenerTiempo(nombreABuscar.value)
+    .subscribe((datos)=>{
+      console.log(datos)
+    })
   }
 }
