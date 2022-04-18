@@ -1,7 +1,7 @@
 <main>
   <div>
     <h1>Pronostico del tiempo</h1>
-    <input type="text" #texto >
+    <input type="text" #texto (keyup.enter)="buscar(texto)">
     <button (click)="buscar(texto)">Buscar</button>
   </div>
 </main>
